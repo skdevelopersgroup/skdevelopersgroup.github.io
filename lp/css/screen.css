@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width: 1000px) {
+.wrapper{width:100%;}
+.arrow_center{width:100%;}
+.slider_sub_sec li img{width:100%; height:auto;}
+}
+@media only screen and (min-width:1001px) and (max-width:1280px){
+	.phone1
+{
+	background:url(../images/phone-bg.png) no-repeat top center;
+	height:130px;
+	width:237px;	
+	margin:0px auto;
+	margin-top:10px;
+}
+.app
+{
+	margin:0px auto;
+	width:187px;
+	padding-top:15px;
+	padding-bottom:10px;
+}
+.mob
+{
+	margin:0px auto;
+	text-align:center;
+	font-family:'bebas';
+	color:#000;
+	font-size:36px;
+}
+.form_bg{background:url(../images/form_bg.png) repeat-y left top; width:261px; height: auto; float:left; position:absolute; right:0; top:0; z-index:50; padding-bottom:26px;}
+.form_bg h2{text-transform:uppercase; text-align:center; margin-top:0px; padding-top:5px; padding-bottom:5px;}
+.form_bg h2 .starting{font:normal 16px 'ralewayregular'; color:#ffed2a;}
+.form_bg h2 strong{font:normal 18px/14px 'heaveneticacond6medsh'; color:#FFF; display:block;  padding-bottom:0px;}
+.form_bg .payment{display:block; text-align: center; width:100%;}
+
+.form_bg .payment p{ width:60%; font:normal 20px 'ralewaysemibold'; color:#fff; padding:0 10px; margin:10px auto; background-color:#f21015;}
+
+ul.slider1{height:453px; overflow:hidden; z-index:10; position:relative;}
+
+/*==================FORM==================*/
+.formMain{margin-top:30px;}
+.block2,.block3,.block4,.block5{display:block; float:left; margin-left:17px; margin-bottom:8px;}
+.textclass input{width:210px; height:22px; padding:4px 5px; border:none; border-radius:3px; border-left: solid 6px #ffed2a; }
+.labelclass label{display:none;}
+.textclass input{font:normal 13px Arial, Helvetica, sans-serif; color:#000;}
+.block5 .textclass textarea{width:210px; height:48px; padding:5px; border:none; font:normal 13px Arial, Helvetica, sans-serif; color:#000; resize:none; border-radius:5px; border-left: solid 6px #ffed2a;}
+.submitclass{float:left;}
+.submitclass input{background:url(../images/submit_btn.jpg) no-repeat center top; width:220px; height:37px; border:none; cursor:pointer; text-indent:-9999px; font-size:0; line-height:none; margin-left:17px;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+/*==================FORM END==================*/
+	
+}
+@media only screen and (min-width:641px) and (max-width:1000px){
+.logo_nav_sec{width:98%; padding:0 1%;}
+.form_bg{position:static; width:100%; height:auto; padding-bottom:20px; background:#393838;}
+.form_bg h2{background-position:center bottom;}
+.form_bg h2 strong{display:inline;}
+.formMain{margin:20px 1% 0 0; width:99%;}
+.block2,.block3,.block4{width:32.33%; margin:0; margin-left:1%; margin-bottom:5px;}
+.textclass input{width:96%; padding:4px 2%; border-radius:0;}
+.block5{width:65.66%; margin:0; margin-left:1%}
+.block5 .textclass textarea{width:98%; height:28px; padding:4px 1%; border-radius:0;}
+.submitclass{width:32.33%; margin-left:1%; text-align:center;}
+.submitclass input{margin-left:0; width:100%; display:inline-block;}
+
+.body_container_sec{background:none; padding:20px 0 0;}
+.body_container_sec .conatiner_left_sec{width:98%; float:left; padding:0 1%;}
+.body_container_sec .container_sec{text-align:justify;}
+.body_container_sec .container_sec p.pr20{padding-right:0;}
+
+.body_container_sec .conatiner_right_sec{width:100%; float:left; background:#fff; padding:10px 0; border-top:1px solid #e0e0e0; border-bottom:1px solid #e0e0e0; margin-top:30px; text-align:center;}
+.download_sec ul{padding:0;}
+.body_container_sec .conatiner_right_sec li{float:none; display:inline-block; margin:0 5%;}
+.download_sec ul li.construction_image_icon a,.download_sec ul li.download_brochure_icon a{border-bottom:none; margin-bottom:0; padding-bottom:10px;}
+.footer_sec{padding:10px 1%; width:98%;}
+
+.form_bg.thankyou p{text-align:center;}
+.form_bg.thankyou .block{display:block; margin-bottom:5px;}
+.download_sec ul li img{width:50%; vertical-align:middle;}
+
+}
+
+@media only screen and (min-width:300px) and (max-width:640px){
+.logo_nav_sec{width:98%; padding:0 1%;}
+.logo_nav_sec .right_sec_contact{font-size:17px;}
+.logo_nav_sec .right_sec_contact strong{font-size:20px;}
+.slider_sub_sec{overflow-x:hidden;}
+.slider_sub_sec li img{margin-left:-60px; width:170%;}
+
+.form_bg{position:static; width:100%; height:auto; padding-bottom:20px; background:#393838;}
+.form_bg h2{background-position:center bottom; padding:25px 0; line-height:34px;}
+.form_bg h2 strong{display:inline;}
+.formMain{margin:20px 1% 0 0; width:99%;}
+.block2,.block3,.block4{width:32.33%; margin:0; margin-left:1%; margin-bottom:5px;}
+.textclass input{width:96%; padding:4px 2%; border-radius:0;}
+.block5{width:65.66%; margin:0; margin-left:1%}
+.block5 .textclass textarea{width:96%; height:28px; padding:4px 1%; border-radius:0;}
+.submitclass{width:32.33%; margin-left:1%; text-align:center;}
+.submitclass input{margin-left:0; width:100%; display:inline-block;}
+
+.body_container_sec{background:none; padding:20px 0 0;}
+.body_container_sec .conatiner_left_sec{width:98%; float:left; padding:0 1%;}
+.body_container_sec .container_sec{text-align:justify;}
+.body_container_sec .container_sec p.pr20{padding-right:0;}
+.body_container_sec .advantages_sec_hom li h3{font-size:17px; line-height:17px; min-height:40px;}
+.body_container_sec .conatiner_right_sec{width:100%; float:left; background:#fff; padding:10px 0; border-top:1px solid #e0e0e0; border-bottom:1px solid #e0e0e0; margin-top:30px; text-align:center;}
+.download_sec ul{padding:0;}
+.body_container_sec .conatiner_right_sec li{float:left; display:inline-block; margin:0 1%; width:31%;}
+.download_sec ul li.construction_image_icon a,.download_sec ul li.download_brochure_icon a{border-bottom:none; margin-bottom:0; padding-bottom:10px; font-size:12px;}
+.footer_sec{padding:10px 1%; width:98%;}
+
+.popup{width:96%;}
+
+.form_bg.thankyou p{text-align:center;}
+.form_bg.thankyou .block{display:block; margin-bottom:5px;}
+.download_sec ul li img{width:76%; vertical-align:middle;}
+
+	
+}
+
+@media only screen and (min-width:300px) and (max-width:360px){
+.logo_nav_sec{text-align:center;}
+.logo_nav_sec h1{width:30%; text-align:center; padding-bottom:10px;}
+.logo_nav_sec h1 img{width:90%;}
+.logo_nav_sec .right_sec_contact{float:none; display:inline-block; text-align:left; margin-top:5px; padding:10px 0 10px 42px;}
+.logo_nav_sec .right_sec_contact strong{display:inline;}
+.form_bg h2 .starting{font-size:22px; line-height:34px;}
+.form_bg h2 strong{font-size:24px;}
+.formMain{margin:20px 2% 0 2%; width:96%;}
+.block2,.block3,.block4{width:100%; margin:0; margin-bottom:5px;}
+.block5{width:100%; margin:0; margin-bottom:5px;}
+.textclass input{width:96%; padding:4px 1%; border-radius:0;}
+.block5 .textclass textarea{height:38px;}
+.submitclass{width:100%; margin-left:0; text-align:center;}
+
+.body_container_sec .advantages_sec_hom{padding-top:0px; margin-top:0px;}
+.body_container_sec .advantages_sec_hom li{width:100%; padding:0 0 6px; border:none; border-bottom:1px dotted #000; margin-bottom:10px;}
+.body_container_sec .advantages_sec_hom li span.img{min-height:inherit;}
+.body_container_sec .advantages_sec_hom li.last{border-bottom:none; padding-bottom:0;}
+.body_container_sec .advantages_sec_hom li h3{ background:none; min-height:inherit; margin-bottom:6px; padding-top:15px;}
+.body_container_sec .advantages_sec_hom li .description{min-height:inherit;}
+
+.body_container_sec .conatiner_right_sec{margin-top:0;}
+
+.form_bg.thankyou p{font-size:15px;}
+
+
+}
+
+@media screen and (max-width: 320px) {
+}

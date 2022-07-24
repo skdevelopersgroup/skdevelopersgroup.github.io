@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/home.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="images/favicon.ico" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Contact Us</title>
+<meta name="keywords" content="developers chennai, sk developers, sk, promoters and developers chennai, promoters and developers, promoters, chennai Builders, chennai Flat Promoters, Builders, residential projects at Chennai " />
+
+<meta name="description" content="S.K. Developers is promoted by A.V.Subba Rao. He is a chartered accountant by profession and having experience in the industry for more than 20 years. And he is associated with KSR Group for more than 7 years and developed residential projects in Vizag, Bangalore and Chennai." />
+
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=AIzaSyBBlixf5w75wI2efJli0GbGIOZZwLtHIlM" type="text/javascript"></script>
+<script type="text/javascript" src="labeledmarker.js"></script>
+    <script type="text/javascript">
+function initialize() {
+      if (GBrowserIsCompatible()) {
+        var map = new GMap2(document.getElementById("map_canvas"));
+        map.addControl(new GLargeMapControl());
+		map.addControl(new GMapTypeControl());
+        map.setCenter(new GLatLng(13.049439,80.222648), 14);
+        map.enableDoubleClickZoom();
+
+        var latlng = new GLatLng(13.049439,80.222648);
+
+        var icon = new GIcon();
+        icon.image = 'images/aim_map_icon.gif';
+        icon.iconSize = new GSize(40, 52);
+        icon.iconAnchor = new GPoint(16, 16);
+        icon.infoWindowAnchor = new GPoint(25, 7);
+
+        opts = { 
+          "icon": icon,
+          "clickable": true,
+          "title": "letter A",
+          "labelText": "",
+          "labelOffset": new GSize(-12, -10)
+        };
+		
+
+        var marker = new LabeledMarker(latlng, opts);
+
+        GEvent.addListener(marker, "mouseover", function() {
+		var content='<h3 style="color:#ff9900;font-family:arial">SK DEVELOPERS</h3><font size="2" face="arial" color="#666666">3 - B, Rajaram Film Directors Colony,Kodambakkam,<br />Chennai – 600 024<br />Phone :<br/>044 - 24800633 / 34 <br/>Fax :<br/>044 - 24800635 <br/>E-mail :<br>info@skdevelopers.com</font>';
+          marker.openInfoWindowHtml(content);
+        });
+
+        map.addOverlay(marker);
+	
+var point = new GLatLng(13.049439,80.222648);    
+map.addOverlay(new GMarker(point));
+	
+		
+      }
+    }
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+    } if (errors) alert('The following error(s) occurred:\n'+errors);
+    document.MM_returnValue = (errors == '');
+} }
+</script>
+<!-- InstanceEndEditable -->
+<link href="sk.css" rel="stylesheet" type="text/css" />
+<link href="sk-flat-available.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/nav.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+/*** 
+    Simple jQuery Slideshow Script
+    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+***/
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+
+</script>
+
+<style type="text/css">
+
+/*** set the width and height to match your images **/
+
+#slideshow {
+	position:relative;
+	height:359px;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
+</style>
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body onload="initialize()" onunload="GUnload()">
+<div class="fl_bg">
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+    <div class="tp_fl_bx">
+    <div class="logo_fl_bx">
+        <a href="index.html"><img src="images/logo.jpg" alt="logo" width="206" height="143" border="0"  title="SK Developers"/></a>
+    </div>
+      <div class="top_nav_fl_bx"><a href="emi-calculator.html">EMI Calculator</a> | <a href="rewards-program.html">Rewards Program</a>| <a href="csr.html">CSR</a> | <a href="route-map.html">Route Map</a> | <a href="http://skdevelopersgroup.com/skdevelop_user/">Customer Login</a></div>
+  
+    
+    </div>
+    <div class="nav_fl_bx">
+    <div class="lt_curve_bx"></div>
+    <div class="nav_inner_fl_bx">
+   <div id="menu">
+			<ul>
+            
+				<li><a href="index.html">Home</a>
+					
+						</li>
+                        
+						<li><a href="about-us.html">About Us</a></li>
+                        <li><a href="#">Projects</a>
+                        <ul>
+						<li><a href="projects.html">Residential</a></li> 		
+						<li><a href="commercial.html">Commercial</a></li>
+						<li><a href="hospitality.html">Hospitality</a></li> 					
+						
+                                
+							</ul></li>
+                             
+                        			<li><a href="buyers-guide.html">Buyers Guide</a></li>
+                                    
+                                             <li><a href="#">Business Alliance</a>
+                        <ul>
+						<li><a href="land-owners.html">Land Owners</a></li> 		
+						<li><a href="investors.html">Investors</a></li>
+						<li><a href="suppliers.html">Suppliers</a></li> 					
+						
+                                
+							</ul></li>
+                                    
+                                    
+                                    
+                                    <li><a href="careers.html">Careers</a></li>
+                                    <li><a href="testimonials.html">Testimonials</a></li>
+                                    <li><a href="contact-us.html">Contact Us</a></li>
+			               
+                
+                
+                
+               
+			</ul>
+		</div>
+    
+    
+    
+    
+    
+    </div>
+    <div class="rt_curve_bx"></div>
+    
+    </div>
+    <!-- InstanceBeginEditable name="EditRegion1" -->
+    <div class="ban_content_hold_bx">
+      <div class="banner_bx"><img src="images/inner_image.jpg" width="880" height="198" />      </div>
+      <div class="bt_fl_bx">
+        <table width="860" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td colspan="2" valign="top"><span class="title_text">Contact Us<br />
+            </span></td>
+          </tr>
+          
+          <tr>
+            <td width="425" valign="top"><p><strong class="sub_title_text">SK DEVELOPERS</strong><br />
+                <span class="running_text">3 - B, Rajaram Film 
+                Directors Colony,<br />
+Kodambakkam, <br />
+Chennai - 600 024</span></p>              
+              <p class="running_text"><strong>Tel : </strong> 044 - 24800633 / 34<br />
+                  <strong>Fax : </strong> 044 - 24800635</p>
+              <p class="running_text"><strong> <span class="sub_title_text">For Marketing Contact :</span><br />
+                A.R krishna Chaitanya / Tanuja
+                - Marketing Manager - </strong>
+                +91 8056014312<br />
+                <br />
+                <span class="sub_title_text"><strong>For Bulk Booking & Land Owners Contact :</strong></span><strong><br />
+A.V.Subba Rao - Managing Director - </strong>
++91 9940616014<br />
+              </p>
+              <p class="running_text"><strong>Email:<br />
+              </strong>info@skdevelopersgroup.com<br />
+              <br />
+              </p></td>
+            <td width="435" rowspan="2" valign="top"><form id="form1" name="form1" method="post" action="reservation.php">
+              <div class="enquiry_bx">
+                <table width="401" border="0" align="center" cellpadding="3" cellspacing="0">
+                  <tr>
+                    <td height="36" colspan="2" valign="top" class="title_text">Enquiry</td>
+                  </tr>
+                  <tr>
+                    <td width="64" valign="middle" class="running_text"><strong>Name</strong>*</td>
+                    <td width="327" valign="top"><label>
+                      <input name="name" type="text" class="input_text_style" id="name" />
+                    </label></td>
+                  </tr>
+                  <tr>
+                    <td valign="middle" class="running_text"><strong>E-mail</strong>*</td>
+                    <td valign="top"><input name="email" type="text" class="input_text_style" id="email" /></td>
+                  </tr>
+                  <tr>
+                    <td valign="middle" class="running_text"><strong>Phone No</strong>*</td>
+                    <td valign="top"><input name="phone" type="text" class="input_text_style" id="phone" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" valign="top" class="running_text"><strong><br />
+                      How did you know about our project ?</strong></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" valign="top" class="running_text"><label></label>
+                        <table width="397" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="138"><label>
+                              <input name="source[]" type="checkbox" id="source" value="Friends / Relatives" />
+                              Friends / Relatives</label></td>
+                            <td width="144"><label>
+                              <input name="source[]" type="checkbox" id="source" value="Newspaper" />
+                              Newspaper</label></td>
+                            <td width="115"><label>
+                              <input name="source[]" type="checkbox" id="source" value="Ads / Hoarding" />
+                              Ads / Hoarding</label></td>
+                          </tr>
+                          <tr>
+                            <td><label>
+<input nname="source[]" type="checkbox" id="source2" value="Old customer" />                              
+Old customer</label></td>
+                            <td><label>
+                              <input name="source[]" type="checkbox" id="source" value="online" />
+                              Online</label></td>
+                            <td><label>
+                              <input name="source[]" type="checkbox" id="source" value="Other" />
+                              Other</label></td>
+                          </tr>
+                        </table>
+                      <label></label></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" valign="top" class="running_text"><strong><br />
+                      Message</strong></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" valign="top"><label>
+                      <textarea name="comments" cols="45" rows="5" class="input_text_style2" id="comments"></textarea>
+                    </label></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" valign="top"><label>
+                      <input name="button" type="submit" id="button" onclick="MM_validateForm('name','','R','email','','RisEmail','phone','','RisNum');return document.MM_returnValue" value="Submit" />
+                    </label></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" valign="top">&nbsp;</td>
+                  </tr>
+                </table>
+              </div>
+            </form>            </td>
+          </tr>
+          <tr>
+            <td valign="top">
+<div id="map_canvas" style="width: 370px; height: 200px;"></div></td>
+          </tr>
+        </table>
+      </div>
+      <div class="shadow"></div>
+    </div>
+    <!-- InstanceEndEditable --></td>
+  </tr>
+</table>
+<div class="ft_fl_bx">
+<div class="ft_inner_fl_bx">
+  <table width="900" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td rowspan="2"><p><strong>SK Developers</strong><br />
+        3 - B, Rajaram Film Directors Colony,<br />
+        Kodambakkam, Chennai - 600 024</p>
+        <p>Tel: 044 - 24800633 / 34<br />
+          Fax: 044 - 24800635</p>
+        <p>Email:info@skdevelopersgroup.com</p></td>
+      <td height="74" align="right" valign="middle">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right" valign="middle"><a href="index.html" class="hm_ft_link" title="Home">Home</a> | <a href="about-us.html" class="hm_ft_link" title="About Us">About Us</a> | <a href="projects.html" class="hm_ft_link" title="Projects">Projects</a> | <a href="testimonials.html" class="hm_ft_link" title="Testimonials">Testimonials</a> | <a href="contact-us.html" class="hm_ft_link" title="Contact Us">Contact Us</a><br />
+© 2012 <strong>SK Developers</strong>. 
+        All Rights Reserved<br />
+Designed by <a href="http://www.dreameffectsmedia.com" target="_blank" class="hm_ft_link" title="Dream Effects Multimedia">Dream Effects Multimedia</a></td>
+    </tr>
+  </table>
+</div>
+
+</div>
+
+
+</div>
+</body>
+<!-- InstanceEnd --></html>
